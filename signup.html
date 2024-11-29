@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup - Clothing Store</title> debug the right code 
+  <link rel="stylesheet" href="signup.css">
+  <link rel="stylesheet" href="homepage.css">
+</head>
+<body>
+  
+  <nav class="navbar">
+    <div class="navbar__container">
+      <a href="/" id="navbar__logo">#TOI#</a>
+      <div class="navbar__toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__item">
+          <a href="/homepage.html" class="navbar__links">Home</a>
+        </li>
+        <li class="navbar__item">
+          <a href="/women.html" class="navbar__links">Women</a>
+        </li>
+        <li class="navbar__item">
+          <a href="/men.html" class="navbar__links">Men</a>
+        </li>
+        <li class="navbar__item">
+          <a href="/product.html" class="navbar__links">Products</a>
+        </li>
+        <li class="navbar__btn">
+          <a href="/signup.html" class="button">SignUp</a>
+        </li>
+      </ul>   
+    </div>
+  </nav>
+  
+  
+
+  <header>
+        
+    <h1>#TOI#</h1>
+</header>
+<main>
+  <div class="container">
+    <h2>Signup for Our Clothing Store</h2>
+    <form id="signup-form">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+      </div>
+
+      <div class="form-group">
+        <label for="confirm-password">Confirm Password</label>
+        <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+      </div>
+
+      <div class="form-group">
+        <input type="checkbox" id="terms" name="terms">
+        <label for="terms">I agree to the <a href="#">terms and conditions</a></label>
+      </div>
+
+      <button type="submit">Signup</button>
+    </form>
+
+    <div id="error-message" style="color: red; display: none;"></div>
+  </div>
+  
+</main>
+
+
+  
+<p>&copy; #ITO 2024. All right reserved</p>
+</footer>
+  <script src="signup.js"></script>
+</body>
+</html>

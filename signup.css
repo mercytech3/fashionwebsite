@@ -1,0 +1,286 @@
+/* Apply a gradient background to the page */
+/* Apply a clothing-themed background with a gradient overlay */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, rgba(255, 126, 95, 0.8), rgba(254, 180, 123, 0.8)), 
+              url('https://example.com/clothing-background.jpg'); /* Replace with actual image URL */
+  background-size: cover; /* Make the background cover the entire screen */
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  animation: backgroundAnimation 8s infinite alternate; /* Background animation */
+}
+
+/* Animation for the background gradient */
+@keyframes backgroundAnimation {
+  0% {
+    background: linear-gradient(135deg, rgba(255, 126, 95, 0.8), rgba(254, 180, 123, 0.8)),
+                url('https://example.com/clothing-background.jpg');
+  }
+  50% {
+    background: linear-gradient(135deg, rgba(106, 17, 203, 0.8), rgba(37, 117, 252, 0.8)),
+                url('https://example.com/clothing-background.jpg');
+  }
+  100% {
+    background: linear-gradient(135deg, rgba(255, 126, 95, 0.8), rgba(254, 180, 123, 0.8)),
+                url('https://example.com/clothing-background.jpg');
+  }
+}
+
+/* Style for the container */
+.container {
+  width: 300px;
+  padding: 30px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  animation: formSlideIn 1s ease-out; /* Slide-in animation for the form */
+}
+
+/* Form container animation */
+@keyframes formSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Style for heading */
+h2 {
+  text-align: center;
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+  animation: fadeIn 2s ease-in-out; /* Fade-in effect for the heading */
+}
+
+/* Fade-in animation for the heading */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Style for the form fields */
+.form-group {
+  margin-bottom: 20px;
+  animation: formFieldAnimation 1s ease-out; /* Animation for form fields */
+}
+
+/* Animation for each form field */
+@keyframes formFieldAnimation {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Style for labels */
+label {
+  display: block;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Style for text input fields */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 5px;
+  transition: border 0.3s ease;
+}
+
+/* Style for text input fields on focus */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border: 1px solid #28a745;
+  outline: none;
+}
+
+/* Style for the checkbox */
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* Style for the button */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: #218838;
+  transform: translateY(-2px); /* Button lift on hover */
+}
+
+/* Style for error messages */
+#error-message {
+  color: red;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 20px;
+  display: none;
+}
+body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #333;
+      color: white;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+    .navbar__container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .navbar__menu {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+    .navbar__item {
+      margin: 0 1rem;
+    }
+    .navbar__links {
+      color: white;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+    .navbar__btn .button {
+      background-color: #ff6347;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
+    /* Main Content */
+    main {
+      flex: 1;
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+    .container {
+      background-color: #f9f9f9;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .form-group {
+      margin-bottom: 1rem;
+    }
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+    }
+    input[type="text"], input[type="email"], input[type="password"] {
+      width: 100%;
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button[type="submit"] {
+      background-color: #333;
+      color: white;
+      padding: 0.7rem 1.5rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 1rem 0;
+      text-align: center;
+    }
+    .footer__container {
+      max-width: 1200px;
+      margin: auto;
+    }
+    .footer__links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    .footer__link--items {
+      margin: 1rem;
+    }
+    .footer__link--items a {
+      color: white;
+      text-decoration: none;
+      display: block;
+      margin: 0.5rem 0;
+    }
+    .social__media {
+      margin-top: 1rem;
+    }
+    .social__icons a {
+      color: white;
+      margin: 0 0.5rem;
+      font-size: 1.5rem;
+      text-decoration: none;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .navbar__menu {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .footer__links {
+        flex-direction: column;
+        align-items: center;
+      }
+      .container {
+        padding: 1rem;
+      }
+    }
